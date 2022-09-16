@@ -1,0 +1,9 @@
+.custom-select-none{
+    border: 0px !important;
+}
+.custom-select-none:focus-visible{
+    border: 0px !important;
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+}
