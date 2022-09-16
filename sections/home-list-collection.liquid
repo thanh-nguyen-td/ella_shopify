@@ -32,8 +32,8 @@
         {% for block in section.blocks %}
             {% assign item = block.settings %}
             <div class="card-child-container">
-                {% if item.img_bakground != blank %}
-                    <img src="{{item.img_bakground | img_url: 'medium'}}" loading="lazy" class="custom-img"/>
+                {% if item.img_background != blank %}
+                    <img src="{{item.img_background | img_url: 'medium'}}" loading="lazy" class="custom-img"/>
                 {% else %}
                     {{ 'image' | placeholder_svg_tag: 'custom-img' }} 
                 {% endif %}
