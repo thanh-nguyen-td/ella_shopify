@@ -1,7 +1,8 @@
 {% style %}
 .card-container{
-    display:gird;
-    min-height:300px
+    display: grid;
+    min-height:300px;
+    grid-gap:30px
 }
 .card-child-container{
     position: relative;overflow: hidden;display: flex;justify-content: center;align-items: center; min-height:300px;
@@ -24,11 +25,15 @@
     z-index:-1;
     height:100%
 }
-
+.custom-img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
 {% endstyle %}
 
 <div class="page-width" style="height:100%">
-    <div class="card-container row-{{section.settings.columns}}">
+    <div class="card-container row-{{section.settings.columns_num}}">
         {% for block in section.blocks %}
             {% assign item = block.settings %}
             <div class="card-child-container">
@@ -50,7 +55,7 @@
     "settings":[
         {
             "type":"range",
-            "id":"columns",
+            "id":"columns_num",
             "default":1,
             "min":1,
             "max":4,
