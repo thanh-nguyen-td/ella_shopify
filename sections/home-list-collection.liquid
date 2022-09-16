@@ -1,4 +1,14 @@
 {% style %}
+.card-container{
+    display:gird;
+    min-height:300px
+}
+.card-child-container{
+    position: relative;overflow: hidden;display: flex;justify-content: center;align-items: center; min-height:300px;
+}
+.row-1{
+    grid-template-columns:1fr ;
+}
 .row-2{
     grid-template-columns:1fr 1fr ;
 }
@@ -8,18 +18,26 @@
 .row-4{
     grid-template-columns:1fr 1fr 1fr 1fr;
 }
+.custom-img{
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    height:100%
+}
+
 {% endstyle %}
 
-<div class="page-width">
-    <div>
+<div class="page-width" style="height:100%">
+    <div class="card-container row-{{section.settings.columns}}">
         {% for block in section.blocks %}
             {% assign item = block.settings %}
-            <div>
+            <div class="card-child-container">
                 {% if item.img_bakground != blank %}
-                    <img src="{{item.img_bakground | img_url: 'medium'}}" loading="lazy" />
+                    <img src="{{item.img_bakground | img_url: 'medium'}}" loading="lazy" class="custom-img"/>
                 {% else %}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} 
+                    {{ 'image' | placeholder_svg_tag: 'custom-img' }} 
                 {% endif %}
+                <div>thanh kaka</div>
             </div>
         {% endfor %}
     </div>
@@ -33,8 +51,8 @@
         {
             "type":"range",
             "id":"columns",
-            "default":3,
-            "min":2,
+            "default":1,
+            "min":1,
             "max":4,
             "label":"check columns"
         }
