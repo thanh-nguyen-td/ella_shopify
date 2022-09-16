@@ -1,0 +1,72 @@
+{% style %}
+.row-2{
+    grid-template-columns:1fr 1fr ;
+}
+.row-3{
+    grid-template-columns:1fr 1fr 1fr;
+}
+.row-4{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+{% endstyle %}
+
+<div class="page-width">
+    <div>
+        {% for block in section.blocks %}
+            {% assign item = block.settings %}
+            <div>
+                {% if item.img_bakground != blank %}
+                    <img src="{{item.img_bakground | img_url: 'medium'}}" loading="lazy" />
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} 
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name":"home-list-collection",
+    "tag":"section",
+    "settings":[
+        {
+            "type":"range",
+            "id":"columns",
+            "default":3,
+            "min":2,
+            "max":4,
+            "label":"check columns"
+        }
+    ],
+    "blocks":[
+        {
+            "name":"card img",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img_background",
+                    "label":"img background"
+                },
+                {
+                    "type":"text",
+                    "id":"title",
+                    "default":"title demo",
+                    "label":"img background"
+                },
+                {
+                    "type":"url",
+                    "id":"link",
+                    "default":"title demo",
+                    "label":"img background"
+                }
+            ]
+        }
+    ],
+   "presets": [
+    {
+        "name":"home-list-collection"
+    }
+   ]
+}
+{% endschema %} %}
