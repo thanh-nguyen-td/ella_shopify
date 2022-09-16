@@ -227,14 +227,23 @@
             "title": "title demo",
             "url_click": ""
           }
+        },
+        "74829fe6-3f95-4b52-bcd3-a37a35a8b504": {
+          "type": "image",
+          "settings": {
+            "img_background": "shopify:\/\/shop_images\/734b2998912644580aa156309a89cf85_1.png",
+            "title": "title demo",
+            "url_click": ""
+          }
         }
       },
       "block_order": [
         "a90deecb-b698-438e-b3e3-6aeb354a0f96",
-        "f77e89d6-48f8-4f97-b53d-8ca83f1d2c40"
+        "f77e89d6-48f8-4f97-b53d-8ca83f1d2c40",
+        "74829fe6-3f95-4b52-bcd3-a37a35a8b504"
       ],
       "settings": {
-        "columns": 2
+        "columns_num": 3
       }
     }
   },
