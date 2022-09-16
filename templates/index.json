@@ -215,13 +215,23 @@
         "a90deecb-b698-438e-b3e3-6aeb354a0f96": {
           "type": "image",
           "settings": {
+            "img_background": "shopify:\/\/shop_images\/734b2998912644580aa156309a89cf85_1.png",
+            "title": "title demo",
+            "url_click": ""
+          }
+        },
+        "f77e89d6-48f8-4f97-b53d-8ca83f1d2c40": {
+          "type": "image",
+          "settings": {
+            "img_background": "shopify:\/\/shop_images\/slider1.webp",
             "title": "title demo",
             "url_click": ""
           }
         }
       },
       "block_order": [
-        "a90deecb-b698-438e-b3e3-6aeb354a0f96"
+        "a90deecb-b698-438e-b3e3-6aeb354a0f96",
+        "f77e89d6-48f8-4f97-b53d-8ca83f1d2c40"
       ],
       "settings": {
         "columns": 3
