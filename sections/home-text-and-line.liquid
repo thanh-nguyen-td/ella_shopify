@@ -1,0 +1,36 @@
+
+<div style="display: flex;justify-content:center;align-items:center;flex-direction: column;">
+    <div style="height: 1px;background:#000;width:100%">.</div>
+    <div>{{section.settings.title}}</div>
+    <div style="height: 1px;background:#000;width:100%">.</div>
+</div>
+{% schema %}
+{
+    "name":"text and line",
+    "tag":"section",
+    "settings":[
+        {
+           "type": "text",
+           "id":"title",
+           "default":"NEW ARRIVALS",
+           "label":"text title"
+        },
+        {
+            "type": "text",
+            "id":"text_button",
+            "default":"VIEW ALL",
+            "label":"text button"
+         },
+         {
+            "type": "url",
+            "id":"text_link",
+            "label":"link_button"
+         }
+    ],
+   "presets": [
+    {
+        "name":"text and line"
+    }
+   ]
+}
+{% endschema %}
