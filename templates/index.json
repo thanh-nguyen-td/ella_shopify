@@ -245,6 +245,14 @@
       "settings": {
         "columns_num": 3
       }
+    },
+    "16633953582e72a343": {
+      "type": "home-text-and-line",
+      "settings": {
+        "title": "NEW ARRIVALS",
+        "text_button": "VIEW ALL",
+        "text_link": ""
+      }
     }
   },
   "order": [
@@ -254,6 +262,7 @@
     "collage",
     "video",
     "multicolumn",
-    "16633195513d9c280f"
+    "16633195513d9c280f",
+    "16633953582e72a343"
   ]
 }
