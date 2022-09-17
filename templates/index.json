@@ -253,6 +253,12 @@
         "text_button": "VIEW ALL",
         "text_link": ""
       }
+    },
+    "166340930657485ffa": {
+      "type": "custom-card-list",
+      "settings": {
+        "feature-collection": ""
+      }
     }
   },
   "order": [
@@ -263,6 +269,7 @@
     "video",
     "multicolumn",
     "16633195513d9c280f",
-    "16633953582e72a343"
+    "16633953582e72a343",
+    "166340930657485ffa"
   ]
 }
