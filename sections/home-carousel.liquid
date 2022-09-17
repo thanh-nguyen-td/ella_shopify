@@ -1,4 +1,43 @@
-<div>day la carousel</div>
+{{ 'custom-card-list.css' | asset_url | stylesheet_tag }}
+
+<div class="list-product page-width">
+    {% for product in collections[section.settings.feature-collection].products %}
+    <div  class="custom-card">
+        <div class="wrap-img">
+            <img  class="img-card" src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
+            <div class="text-button">add to card</div>
+            <div class="icon-group">
+               <div>
+                <a class="child-icon" href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+               </div>
+                <a class="child-icon" href="#">
+                    <i class="fa-regular fa-eye"></i>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-content">
+            <div class="tags">
+                {{product.tags}}
+            </div>
+            <div style="font-size:14px; "><a href="{{product.url}}" class="custom-a">{{product.title}}</a></div>
+        <div style="font-size:18px; font-weight:600;color:#fb5f1f">Rs. {{product.price}}</div>
+        <div style="display: flex; text-align: center; justify-content: center;">
+            <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
+                <div style="background:#000;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
+            </div>
+            <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
+                <div style="width: 26px;height:26px; border-radius:13px;color:transparent;background: #fb5f1f;">T</div>
+            </div>
+            <a href="#" style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000; text-decoration: none;">
+                <div style="background:white;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
+            </a>
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% schema %}
 {
     "name":"home-carousel",
