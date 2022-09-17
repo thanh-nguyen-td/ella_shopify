@@ -280,6 +280,12 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "16634246758f1976c7": {
+      "type": "home-carousel",
+      "settings": {
+        "columns_num": 1
+      }
     }
   },
   "order": [
@@ -291,6 +297,7 @@
     "collage",
     "video",
     "multicolumn",
-    "16634233521ef3f94e"
+    "16634233521ef3f94e",
+    "16634246758f1976c7"
   ]
 }
