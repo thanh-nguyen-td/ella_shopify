@@ -1,11 +1,16 @@
+{{ 'common.css' | asset_url | stylesheet_tag }}
 {% style %}
 .card-container{
     display: grid;
-    min-height:300px;
     grid-gap:30px
 }
 .card-child-container{
-    position: relative;overflow: hidden;display: flex;justify-content: center;align-items: center; min-height:300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height:200px;
 }
 .row-1{
     grid-template-columns:1fr ;
@@ -23,12 +28,25 @@
     width:100%;
     position:absolute;
     z-index:-1;
-    height:100%
+    height:100%;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
-.custom-img:hover{
+.custom-title{
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-decoration: none
+}
+.card-child-container:hover img{
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
+    transition: transform 0.5s ease;
+}
+.card-child-container .custom-title:hover{
+    text-decoration: underline
 }
 {% endstyle %}
 
@@ -42,7 +60,7 @@
                 {% else %}
                     {{ 'image' | placeholder_svg_tag: 'custom-img' }} 
                 {% endif %}
-                <div>thanh kaka</div>
+                <div class="custom-title">{{item.title}}</div>
             </div>
         {% endfor %}
     </div>
@@ -75,7 +93,7 @@
                 {
                     "type":"text",
                     "id":"title",
-                    "default":"title demo",
+                    "default":"TITLE DEMO",
                     "label":"img background"
                 },
                 {
