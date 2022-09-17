@@ -1,4 +1,12 @@
 {% style %}
+.list-product{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    grid-gap: 30px;
+    padding:0 130px;
+    margin-bottom: 50px;
+}
 {% endstyle %}
 <div class="list-product">
     {% for product in collections[section.settings.feature-collection].products %}
