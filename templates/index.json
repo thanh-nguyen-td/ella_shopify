@@ -257,7 +257,7 @@
     "166340930657485ffa": {
       "type": "custom-card-list",
       "settings": {
-        "feature-collection": ""
+        "feature-collection": "frontpage"
       }
     }
   },
