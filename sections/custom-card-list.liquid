@@ -1,0 +1,58 @@
+{% style %}
+{% endstyle %}
+<div class="list-product">
+    {% for product in collections[section.settings.feature-collection].products %}
+        <div class="container-custom-card">
+            <div class="container-card-product">
+                <img  class="img-card"  src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                <div class="overlay"></div>
+                <div class="icon-group">
+                    <a class="child-icon" href="#">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <a class="child-icon" href="#">
+                        <i class="fa-regular fa-clone"></i>
+                    </a>
+                    <a class="child-icon" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <a class="child-icon" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+        </div>
+            <div style="display: flex;align-items:center; flex-direction: column;margin-top: 20px;">
+                <div style="font-size:18px; font-weight:600"><a href="{{product.url}}" class="custom-a">{{product.title}}</a></div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                <div style="font-size:18px; font-weight:600;color:#fb5f1f">Rs. {{product.price}}</div>
+                <img  class="child-img"  src="{{product.featured_media.preview_image | img_url}}"/>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% schema %}
+    {
+        "name": "home_list-card",
+        "tag":"section",
+        "settings": [
+            {
+            "type": "collection",
+            "id":"feature-collection",
+            "label":"Collection"
+            }
+        ],
+        "presets": [
+            {
+                "category": "home-colections",
+                "name":"home_list-card"
+            }
+        ]
+    }
+{% endschema %}
