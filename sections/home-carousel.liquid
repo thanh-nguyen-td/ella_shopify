@@ -10,49 +10,7 @@
   "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
 }
 {%- endcapture -%}
-<!-- <div class="page-width">
-    <div class="list-product">
-        {% for product in collections[section.settings.feature-collection].products %}
-        {% if forloop.index <= 4 %}
-        <div  class="custom-card">
-            <div class="wrap-img">
-                <img  class="img-card" src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
-                <div class="text-button">add to card</div>
-                <div class="icon-group">
-                   <div>
-                    <a class="child-icon" href="#">
-                        <i class="fa-regular fa-heart"></i>
-                    </a>
-                   </div>
-                    <a class="child-icon" href="#">
-                        <i class="fa-regular fa-eye"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="wrap-content">
-                <div class="tags">
-                    {{product.tags}}
-                </div>
-                <div style="font-size:14px; "><a href="{{product.url}}" class="custom-a">{{product.title}}</a></div>
-            <div style="font-size:18px; font-weight:600;color:#fb5f1f">Rs. {{product.price}}</div>
-            <div style="display: flex; text-align: center; justify-content: center;">
-                <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
-                    <div style="background:#000;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
-                </div>
-                <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
-                    <div style="width: 26px;height:26px; border-radius:13px;color:transparent;background: #fb5f1f;">T</div>
-                </div>
-                <a href="#" style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000; text-decoration: none;">
-                    <div style="background:white;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
-                </a>
-            </div>
-            </div>
-        </div>
-        {% endif %}
-      
-        {% endfor %}
-    </div>
-</div> -->
+
 <div class="featured-collection-slider page-width">
     {% if section.settings.title != blank %}
     <div class="section-header text-center">
@@ -66,16 +24,46 @@
         <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}'>
           {% for product in collection.products limit: product_limit %}
             <div class="carousel-cell">
-              <!-- <a href="{{ product.url | within: collection }}">
-                <img class="img-explore" src="{{ product.featured_image | img_url: 'master'}}">
-                <h4>{{ product.title }}</h4>
-                <p>{{ product.price | money }}</p>
-              </a> -->
-              <div style="height:300px; width:100%;background:red">thanh11</div>
+                <!-- content card-->
+              <div  class="custom-card">
+                <div class="wrap-img">
+                    <img  class="img-card" src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
+                    <div class="text-button">add to card</div>
+                    <div class="icon-group">
+                       <div>
+                        <a class="child-icon" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                       </div>
+                        <a class="child-icon" href="#">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap-content">
+                    <div class="tags">
+                        {{product.tags}}
+                    </div>
+                    <div style="font-size:14px; "><a href="{{product.url}}" class="custom-a">{{product.title}}</a></div>
+                <div style="font-size:18px; font-weight:600;color:#fb5f1f">Rs. {{product.price}}</div>
+                <div style="display: flex; text-align: center; justify-content: center;">
+                    <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
+                        <div style="background:#000;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
+                    </div>
+                    <div style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000">
+                        <div style="width: 26px;height:26px; border-radius:13px;color:transparent;background: #fb5f1f;">T</div>
+                    </div>
+                    <a href="#" style="margin:5px;height: 32px;width:32px;border-radius:16px; display:flex; justify-content:center; align-items:center;border:1px solid #000; text-decoration: none;">
+                        <div style="background:white;width: 26px;height:26px; border-radius:13px;color:transparent;">T</div>
+                    </a>
+                </div>
+                </div>
+            </div>
+             <!-- end content -->
           </div>  
         {% endfor %}
         </div>
-    </div>
+</div>
 
     <style>
         .featured-collection-slider{
