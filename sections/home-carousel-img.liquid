@@ -17,14 +17,13 @@
       <h2>{{ section.settings.title | escape }}</h2>
     </div>
     {% endif %}
-
+    {%- assign collection = collections[section.settings.feature-collection] -%}
     {%- assign product_limit = section.settings.product_count -%}
         <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}'>
-          {% for block in section.blocks %}
-          {% assign item = block.settings %}
+            {% for product in collection.products limit: product_limit %}
               <div class="carousel-cell">
-                <div  style="height: 100px;width: 100%">
-                    <img style="height: 100%;" src="{{item.image | img_url:'grande'}}"/>
+                <div class="wrap-img">
+                    <img class="img-card" src="{{product.featured_media.preview_image | img_url:'grande'}}"/>
                 </div>
             </div>
           {% endfor %}
