@@ -284,7 +284,9 @@
     "16634246758f1976c7": {
       "type": "home-carousel",
       "settings": {
-        "feature-collection": "bags-1"
+        "title": "Featured Collection",
+        "feature-collection": "bags-1",
+        "product_count": 8
       }
     }
   },
