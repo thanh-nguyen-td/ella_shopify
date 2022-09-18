@@ -274,6 +274,14 @@
       "settings": {
         "columns_num": 3
       }
+    },
+    "1663475233f9bea8f5": {
+      "type": "home-carousel-logo",
+      "settings": {
+        "title": "Featured Collection",
+        "feature-collection": "",
+        "product_count": 4
+      }
     }
   },
   "order": [
@@ -287,6 +295,7 @@
     "multicolumn",
     "16634233521ef3f94e",
     "16634246758f1976c7",
-    "1663473442f2d35223"
+    "1663473442f2d35223",
+    "1663475233f9bea8f5"
   ]
 }
