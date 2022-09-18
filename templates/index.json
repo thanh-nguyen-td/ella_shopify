@@ -237,6 +237,25 @@
         "feature-collection": "bags-1",
         "product_count": 8
       }
+    },
+    "1663473442f2d35223": {
+      "type": "home-feature-on-ella",
+      "blocks": {
+        "cbc70125-42e5-4585-aa52-7f88648bd14f": {
+          "type": "image",
+          "settings": {
+            "img_background": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "title": "TITLE DEMO",
+            "url_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "cbc70125-42e5-4585-aa52-7f88648bd14f"
+      ],
+      "settings": {
+        "columns_num": 3
+      }
     }
   },
   "order": [
@@ -249,6 +268,7 @@
     "video",
     "multicolumn",
     "16634233521ef3f94e",
-    "16634246758f1976c7"
+    "16634246758f1976c7",
+    "1663473442f2d35223"
   ]
 }
