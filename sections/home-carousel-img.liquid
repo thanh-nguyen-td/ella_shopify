@@ -1,4 +1,5 @@
 {{ 'custom-card-list.css' | asset_url | stylesheet_tag }}
+{{ 'common.css' | asset_url | stylesheet_tag }}
 
 {%- capture flickity_options -%}
 {
@@ -10,25 +11,31 @@
   "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
 }
 {%- endcapture -%}
-
-<div class="featured-collection-slider page-width">
-    {% if section.settings.title != blank %}
-    <div class="section-header text-center">
-      <h2>{{ section.settings.title | escape }}</h2>
-    </div>
-    {% endif %}
-    {%- assign collection = collections[section.settings.feature-collection] -%}
-    {%- assign product_limit = section.settings.product_count -%}
-        <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}'>
-            {% for product in collection.products limit: product_limit %}
-              <div class="carousel-cell">
-                <div class="wrap-img">
-                    <img class="img-card" src="{{product.featured_media.preview_image | img_url:'grande'}}"/>
-                </div>
-            </div>
-          {% endfor %}
+<div style="background: #fafafa;padding-bottom: 40px;">
+    <div class="featured-collection-slider page-width pt_50">
+        {% if section.settings.title != blank %}
+        <div class="section-header text-center mb_50">
+          <h2 class="font_600">{{ section.settings.title | escape }}</h2>
+          <div>{{ section.settings.content | escape }}</div>
         </div>
+        {% endif %}
+        {%- assign collection = collections[section.settings.feature-collection] -%}
+        {%- assign product_limit = section.settings.product_count -%}
+            <div class="products-carousel js-flickity mt_50" data-flickity='{{ flickity_options }}'>
+                {% for product in collection.products limit: product_limit %}
+                  <div class="carousel-cell">
+                    <div class="wrap-img">
+                        <img class="img-card" src="{{product.featured_media.preview_image | img_url:'grande'}}"/>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+           <div class="center mt_40">
+                <a href="{{section.setting.link_button}}" class="button_bl text_link font_600">{{section.settings.text_button}}</a>
+           </div>
+    </div>
 </div>
+
 
     <style>
         .featured-collection-slider{

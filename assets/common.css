@@ -13,7 +13,51 @@
     outline-offset: 0;
     box-shadow: none;
 }
+/* marrgin */
+.mt_10{
+    margin-top: 10px;
+}
+.mt_20{
+    margin-top: 20px;
+}
+.mt_30{
+    margin-top: 30px;
+}
+.mt_40{
+    margin-top: 40px;
+}
+.mt_50{
+    margin-top: 50px;
+}
+.mb_50{
+    margin-bottom: 50px;
+}
+.mb_40{
+    margin-bottom: 40px;
+}
+.pt_50{
+    padding-top: 50px;
+}
 /* text */
+.text_link{
+    color:#000;
+    text-decoration: none;
+}
+.font_600{
+    font-weight: 600;
+}
+/* button */
+.button_bl{
+    background: #000;
+    color:#fff;
+    padding: 10px 40px;
+    border: 1px solid #000;
+}
+.button_bl:hover{
+    background: #fff;
+    color:#000;
+   
+}
 
 @media screen and (max-width:768px) {
     .card-child-container{
