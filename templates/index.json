@@ -238,6 +238,15 @@
         "product_count": 8
       }
     },
+    "166347867535fbf39b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
     "1663473442f2d35223": {
       "type": "home-feature-on-ella",
       "blocks": {
@@ -273,6 +282,15 @@
       ],
       "settings": {
         "columns_num": 3
+      }
+    },
+    "1663478636938686ba": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 16,
+        "padding_bottom": 12
       }
     },
     "1663475233f9bea8f5": {
@@ -335,6 +353,25 @@
         "feature-collection": "",
         "product_count": 4
       }
+    },
+    "1663478713683b9cbb": {
+      "type": "home-carousel-img",
+      "blocks": {
+        "1fabad80-61b5-4163-97af-d3d3d30dcdf9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slideshow-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1fabad80-61b5-4163-97af-d3d3d30dcdf9"
+      ],
+      "settings": {
+        "title": "Featured Collection",
+        "feature-collection": "",
+        "product_count": 4
+      }
     }
   },
   "order": [
@@ -348,7 +385,10 @@
     "multicolumn",
     "16634233521ef3f94e",
     "16634246758f1976c7",
+    "166347867535fbf39b",
     "1663473442f2d35223",
-    "1663475233f9bea8f5"
+    "1663478636938686ba",
+    "1663475233f9bea8f5",
+    "1663478713683b9cbb"
   ]
 }
