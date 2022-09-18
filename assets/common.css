@@ -13,6 +13,8 @@
     outline-offset: 0;
     box-shadow: none;
 }
+/* text */
+
 @media screen and (max-width:768px) {
     .card-child-container{
         min-height:200px;
