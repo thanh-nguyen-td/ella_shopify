@@ -102,6 +102,15 @@
         "text_link": ""
       }
     },
+    "1663472089a7ecbbd9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "166340930657485ffa": {
       "type": "custom-card-list",
       "settings": {
@@ -304,6 +313,7 @@
     "1663472030ebf9b680",
     "16633195513d9c280f",
     "16633953582e72a343",
+    "1663472089a7ecbbd9",
     "166340930657485ffa",
     "rich_text",
     "collage",
