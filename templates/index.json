@@ -397,8 +397,8 @@
       ],
       "settings": {
         "title": "Featured Collection",
-        "feature-collection": "",
-        "product_count": 4
+        "feature-collection": "shoes",
+        "product_count": 8
       }
     }
   },
