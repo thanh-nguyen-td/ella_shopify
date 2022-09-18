@@ -19,12 +19,9 @@
         <div class="row-text">{{section.settings.title}}</div>
         <div class="row-line">.</div>
     </div>
-    {% if section.settings.show_button == true %}
     <div style="text-align: center;font-size: 13px">
-        <a href="{{section.settings.text_link}}" style="color:#000">{{section.settings.text_button}}</a>
+    <a href="{{section.settings.text_link}}" style="color:#000">{{section.settings.text_button}}</a>
     </div>
-    {% endif %}
-   
 </div>
 
 {% schema %}
@@ -32,12 +29,6 @@
     "name":"text and line",
     "tag":"section",
     "settings":[
-        {
-            "type": "checkbox",
-            "id":"show_button",
-            "default":false,
-            "label":"Show button"
-        },
         {
            "type": "text",
            "id":"title",
