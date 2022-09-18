@@ -248,10 +248,28 @@
             "title": "TITLE DEMO",
             "url_click": ""
           }
+        },
+        "d3b48ab4-7163-4c0c-a9a6-63ae0937c8b4": {
+          "type": "image",
+          "settings": {
+            "img_background": "shopify:\/\/shop_images\/mlouye-helix-sand-banner-mobile-l1_720x_720x_d968f35a-e316-431d-bc4a-5d58ed2ebf88.webp",
+            "title": "TITLE DEMO",
+            "url_click": ""
+          }
+        },
+        "c78ae400-9cff-4fc7-90c3-66ca6d867635": {
+          "type": "image",
+          "settings": {
+            "img_background": "shopify:\/\/shop_images\/734b2998912644580aa156309a89cf85_1.png",
+            "title": "TITLE DEMO",
+            "url_click": ""
+          }
         }
       },
       "block_order": [
-        "cbc70125-42e5-4585-aa52-7f88648bd14f"
+        "cbc70125-42e5-4585-aa52-7f88648bd14f",
+        "d3b48ab4-7163-4c0c-a9a6-63ae0937c8b4",
+        "c78ae400-9cff-4fc7-90c3-66ca6d867635"
       ],
       "settings": {
         "columns_num": 3
