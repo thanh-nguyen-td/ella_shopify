@@ -163,6 +163,15 @@
         "padding_bottom": 28
       }
     },
+    "1663580677c42d4e95": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1663580511d19a3481": {
       "type": "home-carousel",
       "settings": {
@@ -178,6 +187,7 @@
     "1663580493a55ef012",
     "16635795785320c45d",
     "product-recommendations",
+    "1663580677c42d4e95",
     "1663580511d19a3481"
   ]
 }
