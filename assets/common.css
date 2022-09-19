@@ -46,6 +46,11 @@
 .font_600{
     font-weight: 600;
 }
+.circle{
+    height:30px;
+    width:30px;
+    
+}
 /* button */
 .button_bl{
     background: #000;
