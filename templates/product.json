@@ -127,6 +127,15 @@
         "product_count": 7
       }
     },
+    "16635795785320c45d": {
+      "type": "custom-review",
+      "settings": {
+        "title": "CUSTOMER REVIEWS",
+        "content": "No reviews yet",
+        "text_button": "write a review",
+        "check_button": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -148,6 +157,7 @@
   "order": [
     "main",
     "1663575477768f672f",
+    "16635795785320c45d",
     "product-recommendations"
   ]
 }
