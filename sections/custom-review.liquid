@@ -1,8 +1,9 @@
-<div>
+{{"common.css" | asset_url | stylesheet_tag}}
+<div class="page-width center flex_column " >
     <h3>{{section.settings.title}}</h3>
-    <p>{{section.settings.content}}</p>
-   <div>
-        <p>{{section.settings.text_button}}</p>
+    <p class="mt_10">{{section.settings.content}}</p>
+   <div class="button_white center font_600 mt_10" style="font-size: 16px;text-transform: uppercase;">
+        {{section.settings.text_button}}
    </div>
 </div>
 {% schema %}
