@@ -119,6 +119,14 @@
         "padding_bottom": 12
       }
     },
+    "1663575477768f672f": {
+      "type": "home-carousel",
+      "settings": {
+        "title": "RELATED PRODUCTS",
+        "feature-collection": "bags",
+        "product_count": 7
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -135,19 +143,11 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "1663575477768f672f": {
-      "type": "home-carousel",
-      "settings": {
-        "title": "RELATED PRODUCTS",
-        "feature-collection": "bags",
-        "product_count": 7
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "1663575477768f672f"
+    "1663575477768f672f",
+    "product-recommendations"
   ]
 }
