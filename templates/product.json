@@ -167,8 +167,8 @@
       "type": "home-carousel",
       "settings": {
         "title": "Featured Collection",
-        "feature-collection": "",
-        "product_count": 4
+        "feature-collection": "frontpage",
+        "product_count": 8
       }
     }
   },
