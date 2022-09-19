@@ -127,6 +127,15 @@
         "product_count": 7
       }
     },
+    "1663580493a55ef012": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 16
+      }
+    },
     "16635795785320c45d": {
       "type": "custom-review",
       "settings": {
@@ -138,6 +147,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -152,12 +162,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "1663580511d19a3481": {
+      "type": "home-carousel",
+      "settings": {
+        "title": "Featured Collection",
+        "feature-collection": "",
+        "product_count": 4
+      }
     }
   },
   "order": [
     "main",
     "1663575477768f672f",
+    "1663580493a55ef012",
     "16635795785320c45d",
-    "product-recommendations"
+    "product-recommendations",
+    "1663580511d19a3481"
   ]
 }
