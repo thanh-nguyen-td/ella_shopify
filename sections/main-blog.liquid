@@ -42,22 +42,61 @@
           {% endfor %}
         </div>
       </div>
-      <div style="width:100%;background:pink">
-        <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      <div style="width:100%;">
           {%- for article in blog.articles -%}
-            <div class="blog-articles__article article">
-              {%- render 'article-card',
-                article: article,
-                media_height: section.settings.image_height,
-                media_aspect_ratio: article.image.aspect_ratio,
-                show_image: section.settings.show_image,
-                show_date: section.settings.show_date,
-                show_author: section.settings.show_author,
-                show_excerpt: true 
-              -%}
+            {% if forloop.index == 1 %}
+            <div>
+              <h2 class="card__heading{% if show_excerpt %} h2{% endif %}">
+                <a href="{{ article.url }}" class="full-unstyled-link">
+                  {{ article.title | truncate: 50 | escape }}
+                </a>
+              </h2>
+              <div style="font-sie:14px; line-height:20px; margin-top:15px;margin-bottom:25px">{{article.content}}</div>
+              <div style="font-size:14px; margin-bottom:10px">
+               <span style="color:#999; margin-right:10px">
+                {{ article.published_at | date:'%B %d %Y'}}
+               </span>
+               <span style="color:#000 ; margin-right:10px">
+                <span style="color:#999">by</span> {{ article.author | escape}}
+               </span>
+               <span style="color:#999 ">
+                /  {{ article.comments_count | escape}}
+                Comments
+               </span>
+              </div>
             </div>
+              <img style="width: 100%;" src="{{ article.image.src | image_url: width: 533 }}">
+              {% else %}
+              <div style="grid-template-columns: 4fr 5fr;display:grid ;grid-gap:30px; margin-top: 30px;">
+                {% if article.image.src != blank %}
+                  <img class="image_small" src="{{ article.image.src | image_url: width: 533 }}">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: "image_small" }}
+                {% endif %}
+                
+                <div>
+                  <h2 class="card__heading{% if show_excerpt %} h2{% endif %}">
+                    <a href="{{ article.url }}" class="full-unstyled-link">
+                      {{ article.title | truncate: 50 | escape }}
+                    </a>
+                  </h2>
+                  <div style="font-sie:14px; line-height:20px; margin-top:15px;margin-bottom:25px">{{article.content}}</div>
+                  <div style="font-size:14px; margin-bottom:10px">
+                   <span style="color:#999; margin-right:10px">
+                    {{ article.published_at | date:'%B %d %Y'}}
+                   </span>
+                   <span style="color:#000 ; margin-right:10px">
+                    <span style="color:#999">by</span> {{ article.author | escape}}
+                   </span>
+                   <span style="color:#999 ">
+                    /  {{ article.comments_count | escape}}
+                    Comments
+                   </span>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
           {%- endfor -%}
-        </div>
       </div>
     </div>
     {%- if paginate.pages > 1 -%}
