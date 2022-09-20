@@ -152,11 +152,11 @@
         "1903fecb-5335-4c6c-9074-92877ac6c8b9"
       ],
       "settings": {
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-right",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
