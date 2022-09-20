@@ -1,6 +1,7 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{{ 'custom-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -19,8 +20,8 @@
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+{% render 'breadcrumbs' %}
+    <!-- <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
           {%- render 'article-card',
@@ -34,8 +35,18 @@
           -%}
         </div>
       {%- endfor -%}
+    </div> -->
+    <div class="blog-container">
+      <div style="width:100%;background:red">
+        <p style="font-weight: 600; font-size:16px">CATEGORIES</p>
+        <div>
+          {% for link in linklist[section.settings.menu_left] %}
+            <p>{{link.title}}</p>
+          {% endfor %}
+        </div>
+      </div>
+      <div style="width:100%;background:pink">.</div>
     </div>
-
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
@@ -48,6 +59,17 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "CATEGORIES",
+      "label": "title"
+    },
+    {
+      "type":"link_list",
+      "id":"menu",
+      "label":"menu_left"
+    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"
