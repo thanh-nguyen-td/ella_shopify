@@ -3,6 +3,8 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "title": "CATEGORIES",
+        "menu": "footer",
         "layout": "collage",
         "show_image": true,
         "image_height": "medium",
