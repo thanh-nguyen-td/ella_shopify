@@ -117,19 +117,6 @@
         "feature-collection": "frontpage"
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -221,7 +208,7 @@
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "middle-right",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -356,47 +343,11 @@
     },
     "1663478713683b9cbb": {
       "type": "home-carousel-img",
-      "blocks": {
-        "1fabad80-61b5-4163-97af-d3d3d30dcdf9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/slideshow-1.jpg"
-          }
-        },
-        "ec3aafa8-d7ca-4a00-802e-07bac224c6b4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mlouye-helix-sand-banner-mobile-l1_720x_720x_d968f35a-e316-431d-bc4a-5d58ed2ebf88.webp"
-          }
-        },
-        "2549e1b5-9a45-4fa9-8bb9-74b02e171220": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp"
-          }
-        },
-        "a470fc91-451a-48d3-8ec7-9f01a9c30233": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/slideshow-1.jpg"
-          }
-        },
-        "1fa9ae9b-f399-4cc2-9f2f-fd3894209cde": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mlouye-helix-sand-banner-mobile-l1_720x_720x_d968f35a-e316-431d-bc4a-5d58ed2ebf88.webp"
-          }
-        }
-      },
-      "block_order": [
-        "1fabad80-61b5-4163-97af-d3d3d30dcdf9",
-        "ec3aafa8-d7ca-4a00-802e-07bac224c6b4",
-        "2549e1b5-9a45-4fa9-8bb9-74b02e171220",
-        "a470fc91-451a-48d3-8ec7-9f01a9c30233",
-        "1fa9ae9b-f399-4cc2-9f2f-fd3894209cde"
-      ],
       "settings": {
         "title": "Featured Collection",
+        "content": "Phasellus lorem malesuada ligula pulvinar commodo maecenas",
+        "text_button": "View gallery",
+        "link_button": "",
         "feature-collection": "shoes",
         "product_count": 8
       }
@@ -409,7 +360,6 @@
     "16633953582e72a343",
     "1663472089a7ecbbd9",
     "166340930657485ffa",
-    "video",
     "multicolumn",
     "16634233521ef3f94e",
     "16634246758f1976c7",
