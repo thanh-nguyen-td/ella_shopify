@@ -1,25 +1,30 @@
 {{ 'custom-card-list.css' | asset_url | stylesheet_tag }}
-
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <div class="list-product page-width">
     {% for product in collections[section.settings.feature-collection].products %}
     <div  class="custom-card">
-        <div class="wrap-img">
-            <img  class="img-card" src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
-            <div class="text-button">add to card</div>
-            <div class="icon-group">
-               <div>
-                <a class="child-icon" href="#">
-                    <i class="fa-regular fa-heart"></i>
+        <a href="{{product.url}}">
+            <div class="wrap-img">
+                <img  class="img-card" src="{{product.featured_media.preview_image | img_url: 'large'}}"/>
+                <a href="https://printme-demo.myshopify.com/cart/add?id={{product.id}}">
+                    <!-- https://printme-demo.myshopify.com/cart/add?id={{product.title}} -->
+                    <div class="text-button">add to card</div>
                 </a>
-               </div>
-                <a class="child-icon" href="#">
-                    <i class="fa-regular fa-eye"></i>
-                </a>
+                <div class="icon-group">
+                   <div>
+                    <a class="child-icon" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                   </div>
+                    <a class="child-icon" href="#">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </div>
             </div>
-        </div>
+        </a>
         <div class="wrap-content">
             <div class="tags">
-                {{product.tags}}
+                {{product.id}}
             </div>
             <div style="font-size:14px; "><a href="{{product.url}}" class="custom-a">{{product.title}}</a></div>
         <div style="font-size:18px; font-weight:600;color:#fb5f1f">Rs. {{product.price}}</div>
