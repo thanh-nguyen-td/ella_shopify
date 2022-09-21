@@ -60,6 +60,11 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "16637301742838fc02": {
+      "type": "multicolumn-page",
+      "settings": {
+      }
+    },
     "1663725172f5425ab3": {
       "type": "slideshow",
       "blocks": {
@@ -111,11 +116,18 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "1663730142ae8c73b3": {
+      "type": "contact-us",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "1663725142724ae610",
-    "1663725172f5425ab3"
+    "16637301742838fc02",
+    "1663725172f5425ab3",
+    "1663730142ae8c73b3"
   ]
 }
