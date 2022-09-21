@@ -60,9 +60,32 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "16637358190a946771": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1663735658cd957787": {
+      "type": "custom-text",
+      "settings": {
+      }
+    },
     "16637301742838fc02": {
       "type": "multicolumn-page",
       "settings": {
+      }
+    },
+    "1663736048bdeabbe7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1663725172f5425ab3": {
@@ -117,17 +140,40 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "16637357383278af52": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
     "1663730142ae8c73b3": {
       "type": "contact-us",
       "settings": {
+      }
+    },
+    "16637357140689d4c3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 32
       }
     }
   },
   "order": [
     "main",
     "1663725142724ae610",
+    "16637358190a946771",
+    "1663735658cd957787",
     "16637301742838fc02",
+    "1663736048bdeabbe7",
     "1663725172f5425ab3",
-    "1663730142ae8c73b3"
+    "16637357383278af52",
+    "1663730142ae8c73b3",
+    "16637357140689d4c3"
   ]
 }
