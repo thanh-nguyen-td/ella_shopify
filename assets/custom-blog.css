@@ -2,7 +2,6 @@
     grid-template-columns: 1fr 3fr;
     display: grid;
     grid-gap:30px;
-  
 }
 .text_link:hover{
     text-decoration:underline;
